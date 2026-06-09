@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mall Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">LIPPO MALL PURI</div>
+
+    <nav>
+      <a href="#lantai">Lantai</a>
+      <a href="#tenant">Tenant</a>
+      <a href="#kategori">Kategori</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Temukan Tenant Mall dengan <span>Lebih Cepat</span></h1>
+        <p>
+          Jelajahi tenant berdasarkan lantai, kategori, dan lokasi unit.
+          Cocok untuk mall, pusat belanja, food court, dan area komersial modern.
+        </p>
+
+        <div class="search-box">
+          <input id="searchInput" type="text" placeholder="Cari tenant, contoh: kopi, bioskop, sepatu..." />
+          <button id="searchButton">Cari</button>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#lantai" class="btn-primary">Lihat Per Lantai</a>
+          <a href="#tenant" class="btn-secondary">Lihat Tenant</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="mall-preview">
+          <img src="image.jpg" alt="Lippo Mall Puri" />
+
+          <div class="mall-label">
+            <h2>LIPPO MALL PURI</h2>
+            <p>Digital Tenant Directory</p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-box">
+            <h3>120+</h3>
+            <p>Tenant</p>
+          </div>
+
+          <div class="stat-box">
+            <h3>6</h3>
+            <p>Lantai</p>
+          </div>
+
+          <div class="stat-box">
+            <h3>24/7</h3>
+            <p>Akses</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lantai" class="floor-section">
+      <div class="section-title">
+        <h2>Pilih Lantai</h2>
+        <p>Pilih kode lantai untuk melihat tenant.</p>
+      </div>
+
+      <div class="floor-tabs">
+        <button class="floor-filter active" data-floor="all">All</button>
+        <button class="floor-filter" data-floor="LG">LG</button>
+        <button class="floor-filter" data-floor="GF">GF</button>
+        <button class="floor-filter" data-floor="UG">UG</button>
+        <button class="floor-filter" data-floor="1F">1F</button>
+        <button class="floor-filter" data-floor="2F">2F</button>
+        <button class="floor-filter" data-floor="3F">3F</button>
+      </div>
+    </section>
+
+    <section id="tenant" class="tenant-section">
+      <div class="section-title">
+        <p class="eyebrow">Directory</p>
+        <h2 id="tenantTitle">Jelajahi Tenant</h2>
+        <p id="tenantSubtitle">Pilih lantai atau cari tenant yang ingin kamu tuju.</p>
+      </div>
+
+      <div class="tenant-grid"></div>
+    </section>
+
+        <section id="kategori">
+      <div class="section-title">
+        <h2>Kategori Populer</h2>
+        <p>Cari tenant sesuai kebutuhan pengunjung.</p>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card">
+          <h3>🍜 Food & Beverage</h3>
+          <p>Restoran, kopi, dessert, dan snack.</p>
+        </div>
+
+        <div class="category-card">
+          <h3>👕 Fashion</h3>
+          <p>Pakaian, sepatu, tas, dan aksesoris.</p>
+        </div>
+
+        <div class="category-card">
+          <h3>💄 Beauty</h3>
+          <p>Salon, skincare, parfum, dan kosmetik.</p>
+        </div>
+
+        <div class="category-card">
+          <h3>🎮 Entertainment</h3>
+          <p>Bioskop, arcade, karaoke, dan playground.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="tenantModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+
+      <div class="modal-logo" id="modalLogo">T</div>
+
+      <h2 id="modalName">Nama Tenant</h2>
+      <p class="modal-category" id="modalCategory">Kategori</p>
+
+      <div class="modal-info">
+        <p><strong>Lantai:</strong> <span id="modalFloor">GF</span></p>
+        <p><strong>Unit:</strong> <span id="modalUnit">GF-01</span></p>
+        <p><strong>Jam Buka:</strong> <span id="modalHours">10:00 - 22:00</span></p>
+      </div>
+
+      <p class="modal-description" id="modalDescription">
+        Deskripsi tenant akan muncul di sini.
+      </p>
+
+      <button class="location-btn">Lihat Lokasi</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 MallGuide. Digital directory concept by Luma.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
