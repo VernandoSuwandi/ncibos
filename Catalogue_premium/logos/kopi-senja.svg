@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <rect width="240" height="240" rx="52" fill="#ffffff"/>
+  <rect x="14" y="14" width="212" height="212" rx="44" fill="#f6f0e7" stroke="#d8b98f" stroke-width="4"/>
+  <circle cx="120" cy="96" r="44" fill="#8a5a2b"/>
+  <text x="120" y="112" font-family="Arial, sans-serif" font-size="46" font-weight="700" text-anchor="middle" fill="#ffffff">K</text>
+  <text x="120" y="160" font-family="Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#1f1f1f">Kopi</text>
+  <text x="120" y="190" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#8a5a2b">Senja</text>
+</svg>
